@@ -1,22 +1,18 @@
 package com.bootswagger.controller;
 
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/")
-public class CustomController {
+public class UserController {
 
-    @RequestMapping(value = "/custom", method = RequestMethod.POST)
-    public String custom() {
+    @RequestMapping(value = "/user", method = RequestMethod.POST)
+    public String add() {
         return "custom";
     }
-    @RequestMapping(value = "/home", method = RequestMethod.GET)
-    public String home() {
-        return "home";
-    }
-
 
 
 }
